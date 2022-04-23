@@ -31,7 +31,7 @@ def email_user():
         msg = f'Subject: {subject}\n\n{body}'
 
             # logging.info('Sending Email...')
-        smtp.sendmail(EMAIL_ADDRESS, 'teddyk77@gmail.com', msg)
+        smtp.sendmail(EMAIL_ADDRESS, 'email@email.com', msg)
 
 # Setup sound alarm
 def play_sound():
