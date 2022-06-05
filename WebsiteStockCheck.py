@@ -74,8 +74,8 @@ class Page(QWebEnginePage):
 def main():
     page = Page('https://www.costco.com/.product.100763567.html')
     soup = bs.BeautifulSoup(page.html, 'lxml')
-    
-            
+
+# Use dev tools to find what website uses to identify when a product is out of stock.
     if soup.find_all(class_="primary-button-v2bbb"): 
         while True:
             print("Tag Found")
